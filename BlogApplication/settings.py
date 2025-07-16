@@ -155,8 +155,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS = ['*']  # or specific Render URL after deployment
 
-INSTALLED_APPS += ['corsheaders']
-MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware'] + MIDDLEWARE
+
 
 CORS_ALLOWED_ORIGINS = [
     "https://blog-application-frontend-ten.vercel.app"

@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+import corsheaders
+corsheaders.apps.CorsHeadersConfig.label = 'corsheaders2'
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
